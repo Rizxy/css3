@@ -10,6 +10,7 @@
      height: 200px;
      margin: 60px auto;
      background-image: linear-gradient(salmon,green);
+     transition: .4s;
 }
 
 .dua:hover {
