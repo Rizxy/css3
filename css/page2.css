@@ -11,3 +11,7 @@
      margin: 60px auto;
      background-image: linear-gradient(salmon,green);
 }
+
+.dua:hover {
+     background-image: linear-gradient(green, salmon);
+}
