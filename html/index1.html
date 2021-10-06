@@ -1,0 +1,159 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Penggunaan Filter</title>
+      <style>
+      
+        .container{
+          width: 300px;
+          height: 300px;
+          margin: 30px auto;
+          border: 2px solid black;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        
+        .container2{
+          width: 300px;
+          height: 300px;
+          margin: 30px auto;
+          border: 2px solid black;
+          border-radius: 50%;
+        }
+        
+        .kotak1{
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: skyblue;
+          animation: gerakan 4s ease-in infinite;
+        }
+        
+        .kotak2{
+          width: 50px;
+          height: 50px;
+          background-color: salmon;
+          animation: gerakan2 4s ease-in infinite;
+        }
+        
+        .kotak3{
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          border-radius: 50%;
+          background-color: coral;
+          animation: gerakan3 4s ease-in-out infinite;
+        }
+        
+        .kotak4{
+          width: 50px;
+          height: 50px;
+          background-color: aquamarine;
+          border-radius: 50%;
+          animation: gerakan4 4s ease-in-out infinite;
+        }
+        
+      @keyframes gerakan {
+        0%{
+          transform: translateX(0px) translateY(0px);
+        }
+        25%{
+          transform: translateX(250px) translateY(0px);
+        }
+        
+        50%{
+          transform: translateX(250px) translateY(250px);
+        }
+        
+        75%{
+          transform: translateX(0px) translateY(250px);
+        }
+        
+        100%{
+          transform: translateX(0) translateY(0px);
+        }
+      }
+      
+       @keyframes gerakan2 {
+         0%{
+           transform: translateX(250px) translateY(250px);
+         }
+        25%{
+          transform: translateX(0px) translateY(250px);
+        }
+        
+        50%{
+          transform: translateX(0px) translateY(0px);
+        }
+        
+        75%{
+          transform: translateX(250px) translateY(0px);
+        }
+        
+        100%{
+          transform: translateX(250px) translateY(250px);
+        }
+      }
+      
+      @keyframes gerakan3{
+        0%{
+          transform: translateX(125px) translateY(0px);
+        }
+        
+        25%{
+          transform: translateX(250px) translateY(125px);
+        }
+        
+        50%{
+          transform: translateX(125px) translateY(250px);
+        }
+        
+        75%{
+          transform: translateX(0px) translateY(125px);
+        }
+        
+        100%{
+          transform: translateX(125px) translateY(0px);
+        }
+      }
+      
+      @keyframes gerakan4{
+         0%{
+           transform: translateX(125px) translateY(250px);
+         }
+        25%{
+          transform: translateX(0px) translateY(125px);
+        }
+        
+        50%{
+          transform: translateX(125px) translateY(0px);
+        }
+        
+        75%{
+          transform: translateX(250px) translateY(125px);
+        }
+        
+        100%{
+          transform: translateX(125px) translateY(250px);
+        }
+      }
+      
+      
+      
+      </style>
+    </head>
+    <body>
+      <h1>Animation pada CSS3</h1>
+      <div class="container">
+        <div class="kotak1"></div>
+        <div class="kotak2"></div>
+      </div>
+      
+      <div class="container2">
+        <div class="kotak3"></div>
+        <div class="kotak4"></div>
+      </div>
+      
+    </body>
+  </html>
